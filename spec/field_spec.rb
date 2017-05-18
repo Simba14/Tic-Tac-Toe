@@ -1,5 +1,4 @@
 require 'field'
-
 describe Field do
   subject(:field) { described_class.new }
 
