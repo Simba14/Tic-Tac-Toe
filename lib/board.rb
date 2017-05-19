@@ -1,3 +1,4 @@
+require_relative 'field'
 # stores 3x3 grid containing field values
 class Board
   attr_reader :grid, :field
@@ -8,7 +9,11 @@ class Board
 
   def set
     @grid.each do |row|
-      row.map!{ field }
+      row.map! { field }
     end
+  end
+
+  def update(row:, column:, symbol:)
+    @grid[row][column].fill(symbol)
   end
 end

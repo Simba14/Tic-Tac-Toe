@@ -11,7 +11,7 @@ describe Game do
     it 'sets the board up read for game' do
       allow(board).to receive(:set)
       expect(board).to receive(:set)
-      expect(game.play)
+      game.play
     end
   end
 

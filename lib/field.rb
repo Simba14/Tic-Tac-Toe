@@ -5,4 +5,8 @@ class Field
   def initialize(value: EMPTY)
     @value = value
   end
+
+  def fill(symbol)
+    @value = symbol
+  end
 end
