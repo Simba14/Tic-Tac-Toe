@@ -4,4 +4,8 @@ class Game
   def initialize(board: Board.new)
     @board = board
   end
+
+  def play
+    board.set
+  end
 end
