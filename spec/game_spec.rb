@@ -6,4 +6,5 @@ describe Game do
   it 'is initialized with a boards object' do
     expect(game.board).to eq board
   end
+
 end
