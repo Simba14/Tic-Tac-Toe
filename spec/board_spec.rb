@@ -19,8 +19,8 @@ describe Board do
   describe '#update' do
     before { board.set }
     it 'updates field based on player move' do
+      expect(field).to receive(:fill).with(symbol)
       board.update(row: row, column: column, symbol: symbol)
-      expect(board.grid[row][column]).to receive(fill).with(symbol)
     end
   end
 end
